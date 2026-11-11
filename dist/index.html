@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Family journeys through culture, food and the outdoors — the places we loved, the moments we remember and what we learned along the way.">
   <title>Travels Off The Eaten Track</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -90,67 +92,13 @@
           </div>
         </div>
         <div class="atlas-board">
-          <div class="world-map-wrap">
-            <svg class="world-map" viewBox="0 20 900 350" role="img" aria-labelledby="world-map-title world-map-description">
-              <title id="world-map-title">World map of countries in our family travel archive</title>
-              <desc id="world-map-description">Twenty-six countries are marked across North America, Europe, Asia and Oceania. Australia is marked as home.</desc>
-              <g class="map-grid" aria-hidden="true">
-                <path d="M0 90H900M0 180H900M0 270H900M180 20V370M360 20V370M540 20V370M720 20V370"/>
-              </g>
-              <g class="land" aria-hidden="true">
-                <path d="M42 76 82 48 148 45 196 64 220 91 205 111 173 118 154 141 124 150 101 139 83 112 52 104 35 91Z"/>
-                <path d="M196 151 225 158 249 185 256 220 245 252 234 282 214 315 198 299 190 264 176 235 180 200 164 175Z"/>
-                <path d="M387 58 404 39 438 34 454 48 444 66 415 73Z"/>
-                <path d="M411 96 435 76 468 75 491 89 520 82 557 91 597 85 633 95 672 91 709 106 750 112 790 132 816 151 800 170 768 171 744 190 710 190 688 172 655 168 628 150 594 145 565 157 533 147 507 155 486 140 458 142 438 126 417 124 399 111Z"/>
-                <path d="M470 147 506 142 538 160 555 190 548 224 528 261 500 276 476 252 461 217 449 184Z"/>
-                <path d="M671 176 693 179 712 199 705 220 682 210 668 190Z"/>
-                <path d="M741 259 770 243 812 249 835 271 824 297 793 309 758 300 735 280Z"/>
-                <path d="M858 302 872 291 885 314 878 336 863 327Z"/>
-                <path d="M817 158 829 145 838 163 830 183Z"/>
-              </g>
-              <g class="map-markers">
-                <g class="map-pin" tabindex="0" aria-label="United States"><title>United States</title><circle cx="205" cy="128" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Mexico"><title>Mexico</title><circle cx="195" cy="168" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Iceland"><title>Iceland</title><circle cx="403" cy="63" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Ireland"><title>Ireland</title><circle cx="430" cy="93" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="United Kingdom"><title>United Kingdom</title><circle cx="443" cy="88" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Portugal"><title>Portugal</title><circle cx="430" cy="128" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Spain"><title>Spain</title><circle cx="440" cy="125" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="France"><title>France</title><circle cx="455" cy="110" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Belgium"><title>Belgium</title><circle cx="461" cy="98" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Netherlands"><title>Netherlands</title><circle cx="463" cy="95" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Switzerland"><title>Switzerland</title><circle cx="471" cy="108" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Germany"><title>Germany</title><circle cx="475" cy="98" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Italy"><title>Italy</title><circle cx="481" cy="118" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Austria"><title>Austria</title><circle cx="486" cy="106" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Czechia"><title>Czechia</title><circle cx="489" cy="101" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Greece"><title>Greece</title><circle cx="505" cy="128" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Bulgaria"><title>Bulgaria</title><circle cx="514" cy="118" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Turkey"><title>Turkey</title><circle cx="538" cy="128" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="United Arab Emirates"><title>United Arab Emirates</title><circle cx="585" cy="165" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="India"><title>India</title><circle cx="648" cy="170" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Thailand"><title>Thailand</title><circle cx="703" cy="188" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Vietnam"><title>Vietnam</title><circle cx="720" cy="185" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="South Korea"><title>South Korea</title><circle cx="770" cy="135" r="5"/></g>
-                <g class="map-pin" tabindex="0" aria-label="Japan"><title>Japan</title><circle cx="795" cy="133" r="5"/></g>
-                <g class="map-pin home" tabindex="0" aria-label="Australia, home"><title>Australia · home</title><circle cx="785" cy="288" r="7"/></g>
-                <g class="map-pin" tabindex="0" aria-label="New Zealand"><title>New Zealand</title><circle cx="874" cy="328" r="5"/></g>
-              </g>
-              <g class="map-labels" aria-hidden="true">
-                <text x="801" y="291">home</text>
-                <text x="765" y="122">Korea</text>
-                <text x="391" y="50">Iceland</text>
-              </g>
-            </svg>
+          <div id="travel-map" class="travel-map" aria-label="Interactive world map showing the 26 countries in our family travel archive"></div>
+          <div class="map-toolbar">
+            <p class="map-key"><span></span> Select a country to find it on the map</p>
+            <button class="map-reset" type="button">Show the whole world</button>
           </div>
-          <p class="map-key"><span></span> Countries currently represented in the archive</p>
-          <ul class="country-list" aria-label="Countries currently represented in our travel archive">
-            <li>Australia</li><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Czechia</li><li>France</li>
-            <li>Germany</li><li>Greece</li><li>Iceland</li><li>India</li><li>Ireland</li><li>Italy</li>
-            <li>Japan</li><li>Mexico</li><li>Netherlands</li><li>New Zealand</li><li>Portugal</li><li>South Korea</li>
-            <li>Spain</li><li>Switzerland</li><li>Thailand</li><li>Turkey</li><li>United Arab Emirates</li><li>United Kingdom</li>
-            <li>United States</li><li>Vietnam</li>
-          </ul>
+          <div class="country-list" aria-label="Countries currently represented in our travel archive"></div>
+          <noscript><p class="map-fallback">Enable JavaScript to explore the interactive map.</p></noscript>
         </div>
       </div>
     </section>
@@ -158,32 +106,34 @@
     <section class="section white" id="about">
       <div class="container about-us">
         <div class="section-heading about-intro">
-          <div><p class="eyebrow">Why we travel</p><h2>Travel changed as we did.</h2></div>
-          <p>It began with the two of us—new sights, new cultures and food worth crossing a border for. Then came children, slower days and a more deliberate way of seeing each place. The way we travel has evolved with our family. The reason we keep going has become clearer.</p>
-        </div>
-        <div class="about-origin">
-          <p class="kicker">The turning point</p>
-          <div>
-            <h3>Children slowed us down. That was the gift.</h3>
-            <p>Our first family trips—to Tasmania with a six-month-old, then Japan with a seven-month-old—were transformative. We took longer, stayed longer and experienced each place differently. They also gave us the confidence that having young children did not mean putting travel on hold.</p>
-            <p>Long trips to Turkey, and later Mexico and the United States with our second child, reinforced it. Travelling with children is different and sometimes harder. It is still completely possible—and deeply worthwhile.</p>
+          <div><p class="eyebrow">Why we travel</p><h2>It started with curiosity.</h2></div>
+          <div class="about-opening">
+            <p>For me, it began with the newspaper. Growing up in India before the internet, the Around the World page was my little window into life elsewhere. I read it first.</p>
+            <p>When we finally travelled abroad in our twenties, that distant world became real. Stepping out of an airport into an unfamiliar city still brings the same mix of nerves and excitement—the pleasure of finding our bearings and experiencing a place for the first time.</p>
           </div>
         </div>
-        <div class="about-principles">
-          <article class="about-card">
-            <span>01</span>
-            <h3>Challenge our assumptions</h3>
-            <p>Most of us inherit a view of the world from the people and places around us. Travel takes us beyond that bubble. Every place shows us something we had not considered and reminds us that our way is not the only way.</p>
+        <div class="about-narrative">
+          <div class="about-narrative-heading">
+            <p class="kicker">How it evolved</p>
+            <h3>At first, it was the two of us.</h3>
+          </div>
+          <div class="about-narrative-copy">
+            <p>We travelled for new sights, new cultures and new food. Five years later, we took our six-month-old to Tasmania, then travelled to Japan with a seven-month-old. We were not sure how becoming parents would change things. It slowed us down. We stayed longer, did less and experienced each place more deliberately.</p>
+            <p>Those trips gave us confidence that young children did not mean putting travel on hold. Three weeks in Turkey, then a month in Mexico and the United States after our second child, reinforced it. Travelling with children is different and sometimes harder. It is still completely possible—and deeply worthwhile.</p>
+          </div>
+        </div>
+        <div class="about-reflections">
+          <article class="about-reflection">
+            <h3>Every place changes something we thought we knew.</h3>
+            <p>Most of us inherit a view of the world from our parents, friends and the place we grow up. Travel takes us beyond that bubble. Each new place shows us another way of living and challenges assumptions we did not realise we carried.</p>
           </article>
-          <article class="about-card">
-            <span>02</span>
-            <h3>Taste culture at the source</h3>
-            <p>We believe cuisine is one of the clearest ways into a culture. Eating it at the source—the local ingredients, rituals and context—reveals something no version abroad can fully reproduce.</p>
+          <article class="about-reflection">
+            <h3>Food is how we enter a culture.</h3>
+            <p>We have always loved trying new food. At the source, the ingredients, rituals and context are completely different from what we find abroad. A meal becomes a way to understand the people and place behind it.</p>
           </article>
-          <article class="about-card">
-            <span>03</span>
-            <h3>Give our children a wider world</h3>
-            <p>We want our children to see how differently people live and understand that there is no single right way to build a life. They may not remember every trip. We hope the experiences still plant seeds of curiosity, empathy and openness.</p>
+          <article class="about-reflection">
+            <h3>We want our children to see more than one way to live.</h3>
+            <p>Growing up in Sydney will give them one view of the world. We want them to see others. They may not remember every trip, but we hope the experiences plant seeds of curiosity, empathy and openness that grow with them.</p>
           </article>
         </div>
       </div>
