@@ -212,15 +212,17 @@ Food is central to the itinerary:
 
 This is one of the most complete source notes and a strong candidate for a long-form journey page.
 
-## Later Australian-era trips mixed into the archive
+## Later Australian-era trips
 
-These appear in the imported folders but are outside the original “before moving to Australia” scope:
+These trips appear in the imported folders and the main iCloud Notes folder:
 
 - Tasmania, February 2019;
 - New Zealand, December 2022;
 - Orange, New South Wales;
 - Gold Coast road trip, December 2023;
-- United States/Hawaii, September 2024.
+- United States/Hawaii, September 2024 (listed in the imported notes);
+- **Turkey and Dubai (United Arab Emirates), September 2024.** Vipin confirmed the trip. Itinerary source: `Sep’24 Turkey+Dubai Trip` in iCloud Notes;
+- **Mexico and United States, January 2025.** Vipin confirmed the destinations and month. Itinerary source: `Dec’24-Jan’25 Mexico Trip` in iCloud Notes.
 
 They should be processed separately so the historical European archive is not blurred with later family travel.
 
